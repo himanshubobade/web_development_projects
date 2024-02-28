@@ -1,0 +1,146 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #ffffff;
+    font-family: 'Lato','Arial',sans-serif;
+    color: #000000;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+.clearfix {zoom:1}
+.clearfix:after{
+    content:'.';
+    clear:both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)), url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+h1{
+	padding-top: 30px;
+	text-align: center;
+	font-weight: 300;
+	font-size: 250%;
+	word-spacing: 5px;
+    letter-spacing: 1px;
+}
+
+
+.row{
+	width:1140px;
+	margin: 50px auto 80px auto;
+}
+
+
+/*-----navigation buttons on right*/
+
+.main-nav {
+    margin-top: 200px;
+    float: right;
+    list-style: none;
+
+}
+
+.main-nav li{
+    border-left: 40px;
+    margin-left: 30px;
+
+    padding-bottom: 30px;
+    padding-right: 170px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 120%;
+    color: #34495e;
+    padding: 8px 0px;
+    border-bottom: 2px #283848 transparent;
+    transition: border-bottom 0.2s;
+    
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #283848;
+    
+}
+
+/*----buttons-----*/
+
+.btn:link,
+.btn:visited,
+input[type=submit]{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s,border 0.2s, color 0.2s;
+    
+}
+
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]{
+    background-color: #283848;
+    border: 1px solid #283848;
+    color:#ffffff;
+    margin-right: 15px;
+}
+
+
+
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+    background-color: #1c2732;
+    
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]{
+    border: 1px solid #1c2732;
+}
+
+
+
+
+/*--note section--*/
+
+.bodytext{
+    margin: 60px 0;
+    font-size: 200%;
+}
+
+.long{
+    margin-top:40px;
+}
+
+small{
+    margin-top: 35px;
+    font-size: 120%;
+}

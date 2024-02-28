@@ -1,0 +1,29 @@
+.profileheader{
+    background: linear-gradient(to right,#34495e,#2980b9);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 250px;
+}
+.profilephoto {
+    margin-top: 80px;
+    #margin-left: 90px;
+}
+
+.profilephoto img{
+    border-radius: 250px;
+}
+
+
+#profilename {
+    margin-top: 10px;
+    width: 430px;
+    text-align: center;
+    
+}
+
+.ppgbg {
+    background: linear-gradient(#7f8c8d,#fff);
+    height: 400px;
+    margin-bottom: 100px;
+}

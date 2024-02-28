@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="grid.css">
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <link type="text/css" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+        <title>STUDENTS DATABASE</title>
+
+    </head>
+    <body>
+        
+        
+        <header>
+            <div class="icon">
+                <img src="img/schuler.png">
+            </div>
+            <nav>
+                    <div class="row">
+                        <ul class="main-nav">
+                            <li><a href="#">Sing-up</a></li>
+                            <li><a href="#">Log-in</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+            </nav>
+            <section class="homepagevideo">
+                
+                <video id="slider" autoplay muted loop>
+                    <source src="homepage.mp4" type="video/mp4">
+                </video>
+            </section>
+            
+            <div class="Home-Page">
+                <h1>WELCOME TO SCHULER'S HUB</h1>
+            </div>
+        </header>
+        
+        <section class="section-info">
+            <div class="row">
+                <h2>What is Schuler's Hub about?</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <p class="long-text">Difficulties are often an unavoidable but important part of the learning process. This seems particularly so for complex conceptual learning. Challenges in the learning process are however, particularly difficult to detect and respond to in educational environments where growing class sizes and the increased use of digital technologies mean that teachers are unable to provide nuanced and personalized feedback and support to help students overcome their difficulties. Individual differences, the specifics of the learning activity, and the difficulty of giving individual feedback in large classes and digital environments all add to the challenge of responding to student difficulties and confusion. In this integrative review, we aim to explore</p>
+                </div>
+                
+                <div class="col span-1-of-3">
+                    <p class="long-text">As class sizes in education are increasing and technology is impacting on education at all levels, these trends create significant challenges for teachers as they attempt to support individual students. Technology undoubtedly provides substantial advantages for students, enabling them to access information from around the planet easily and at any time. The advantages and disadvantages of the increased use of technology have come to light over time as students increasingly engage with new innovations. In this review, we will address an issue that has become progressively evident in digital learning environments but is relevant to all educational settings, particularly as class sizes grow. We will explore the difficulties in attempting to understand</p>
+                </div>
+                <div class="col span-1-of-3">
+                    <p class="long-text">Running into problems while learning is often accompanied by an emotional response. Emotion, more broadly, plays a vital role in the integration of new knowledge with prior knowledge. This has been found to be the case in brain imaging studies (e.g., LeDoux, 1992), laboratory-based studies (e.g., Isen et al., 1987), and applied educational studies (e.g., Pekrun, 2005). A clear example of how emotion can impact on the learning process is where it creates an obstacle to learning, reflected in, for example, the vast body of work that has examined the detrimental effect of anxiety on the learning of mathematics (Hembree, 1990). Similarly, confusion has been associated with blockages or impasses in the learning process (Kennedy and Lodge, 2016).</p>
+                </div>
+            </div>    
+        </section>
+        <section class="schuler-features">
+            <ul class="features clearfix">
+                <li class="feature-photo">
+                    <figure>
+                        <img src="img/student_1.jpg" alt="photo1">
+                    </figure>
+                </li>
+                <li class="feature-photo">
+                    <figure>
+                        <img src="img/student_4.jpg" alt="photo2">
+                    </figure>
+                </li>
+                <li class="feature-photo">
+                    <figure>
+                        <img src="img/student_5.jpg" alt="photo3">
+                    </figure>
+                </li>
+            </ul>
+            
+            
+            <ul class="features clearfix">
+                <li class="feature-photo">
+                    <figure>
+                        <img src="img/student_2.jpg" alt="photo6">
+                    </figure>
+                </li>
+                <li class="feature-photo">
+                    <figure>
+                        <img src="img/student_3.jpg" alt="photo7">
+                    </figure>
+                </li>
+                <li class="feature-photo">
+                    <figure>
+                        <img src="img/student_5.jpg" alt="photo8">
+                    </figure>
+                </li>
+            </ul>
+            
+            
+            <ul class="features clearfix">
+                <li class="feature-photo">
+                    <figure>
+                        <img src="img/student_1.jpg" alt="photo9">
+                    </figure>
+                </li>
+                <li class="feature-photo">
+                    <figure>
+                        <img src="img/student_5.jpg" alt="photo10">
+                    </figure>
+                </li>
+                <li class="feature-photo">
+                    <figure>
+                        <img src="img/student_3.jpg" alt="photo11">
+                    </figure>
+                </li>
+            </ul>
+        </section>
+        
+        <section class="featuresv2">
+            <nav id="menu">
+                <img src="img/student_2.jpg" alt="">
+                <ul class="features2">
+                    <li><a data-image="img/1.jpg"  href="#">Courses</a></li>
+                    <li><a data-image="img/2.jpg"  href="#">Profile</a></li>
+                    <li><a data-image="img/3.jpg"  href="#">Work samples</a></li>
+                    <li><a data-image="img/4.jpg"  href="#">Share Queries</a></li>
+                    <li><a data-image="img/5.jpg"  href="#">feedback</a></li>
+                    <li><a data-image="img/6.jpg"  href="#">About Us</a></li>
+                </ul>
+            </nav>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script>
+                $(function(){
+
+                    var image = $("#menu").find('img').attr('src');
+                    console.log(image);
+                    $("#menu ul li a").mouseover(function(){
+                        var currentImage = $(this).attr('data-image');
+                        console.log(currentImage);
+                        $(this).parent().parent().parent().find('img').attr("src", currentImage); $("#menu img").css("opacity","1");
+                    });
+
+                    $("#menu ul li a").mouseout(function(){
+                        $("#menu img").css("opacity","0.5");
+                    });
+                });
+
+            </script>
+        </section>
+     
+
+    </body>
+
+
+</html>

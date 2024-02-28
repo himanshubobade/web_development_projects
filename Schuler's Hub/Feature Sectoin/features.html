@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="features.css" type="text/css">
+        <title>Feature block</title>
+    </head>
+
+    <body>
+        <header>
+
+            <nav>
+                <div class="row">
+                    <ul class="main-nav">
+                        <li><a href="#">Sing-up</a></li>
+                        <li><a href="#">Log-in</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <div class="Home-Page">
+                <h1>WELCOME TO SCHULER'S HUB</h1>
+            </div>
+        </header>
+        <div>
+            <h2>FEATURES</h2>
+        </div>
+        <nav id="menu">
+            <img src="7.jpg" alt="">
+            <ul class="features">
+                <li><a data-image="1.jpg"  href="#">Courses</a></li>
+                <li><a data-image="2.jpg"  href="#">Profile</a></li>
+                <li><a data-image="3.jpg"  href="#">Work samples</a></li>
+                <li><a data-image="4.jpg"  href="#">Share Queries</a></li>
+                <li><a data-image="5.jpg"  href="#">feedback</a></li>
+                <li><a data-image="6.jpg"  href="#">About Us</a></li>
+            </ul>
+        </nav>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(function(){
+
+                var image = $("#menu").find('img').attr('src');
+                console.log(image);
+                $("#menu ul li a").mouseover(function(){
+                    var currentImage = $(this).attr('data-image');
+                    console.log(currentImage);
+                    $(this).parent().parent().parent().find('img').attr("src", currentImage); $("#menu img").css("opacity","1");
+                });
+
+                $("#menu ul li a").mouseout(function(){
+                    $("#menu img").css("opacity","0.5");
+                });
+            });
+                
+        </script>
+
+    </body>
+<html>

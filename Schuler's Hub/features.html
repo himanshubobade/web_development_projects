@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="features.css" type="text/css">
+        <link rel="stylesheet" href="grid.css" type="text/css">
+        <title>Feature block</title>
+    </head>
+
+    <body>
+        <section class="features-section">
+            <div class="row">
+                <nav id="menu">
+                    <img src="img/student_5.jpg" alt="">
+                    <ul class="features">
+                        <li><a data-image="img/1.jpg"  href="#">Courses</a></li>
+                        <li><a data-image="img/2.jpg"  href="#">Profile</a></li>
+                        <li><a data-image="img/3.jpg"  href="#">Work samples</a></li>
+                        <li><a data-image="img/4.jpg"  href="#">Share Queries</a></li>
+                        <li><a data-image="img/5.jpg"  href="#">feedback</a></li>
+                        <li><a data-image="img/6.jpg"  href="#">About Us</a></li>
+                    </ul>
+                </nav>
+        
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                <script>
+                    $(function(){
+
+                        var image = $("#menu").find('img').attr('src');
+                        console.log(image);
+                        $("#menu ul li a").mouseover(function(){
+                            var currentImage = $(this).attr('data-image');
+                            console.log(currentImage);
+                            $(this).parent().parent().parent().find('img').attr("src", currentImage); $("#menu img").css("opacity","1");
+                        });
+
+                        $("#menu ul li a").mouseout(function(){
+                            $("#menu img").css("opacity","0.5");
+                        });
+                    });
+
+                </script>
+            
+            </div>
+        </section>
+        
+
+    </body>
+<html>

@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #ffffff;
+    font-family: 'Lato','Arial',sans-serif;
+    color: #000000;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+
+.clearfix {zoom:1}
+.clearfix:after{
+    content:'.';
+    clear:both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.row{
+    margin: 0 auto;
+    max-width: 1140px;
+} 
+
+/*-----------------------------------------*/
+/*-----------------Header------------------*/
+/*-----------------------------------------*/
+
+header {
+    /*background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(assets/css/homepage/img/student_2.jpg);*/
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    
+}
+
+h1{
+    font-size: 300%;
+    color: #ffffff;
+    font-weight: 300;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1:before{
+    display: block;
+    height: 2px;
+    background-color: #ffffff;
+    content: " ";
+    width: 1000px;
+    margin: 0 auto 0 auto;
+    margin-top: 10px;
+}
+
+h1:after{
+    display: block;
+    height: 2px;
+    background-color: #ffffff;
+    content: " ";
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+
+.Home-Page {
+    width: 1140px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.homepagevideo {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    
+}
+.homepagevideo video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+.icon img{
+    height: 170px;
+    width: auto;
+    position: absolute;
+    margin-top: -15px;
+    margin-left: 1350px;
+    z-index: 9;
+}
+
+
+/*-----------------------------------------*/
+/*-----------------Navigation------------------*/
+/*-----------------------------------------*/
+.main-nav {
+    margin-top: 50px;
+    float: right;
+    list-style: none;
+    position: absolute;
+    z-index: 9;
+}
+
+.main-nav li{
+    display: inline-block;
+    border-left: 30px;
+    margin-left: 30px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    text-decoration: none;
+    font-size: 120%;
+    color: #ffffff;
+    padding: 8px 0;
+    border-bottom: 2px #ffffff transparent;
+    transform: border-bottom 0.2s;
+    
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #ffffff;
+}
+
+/*-----------------------------------------*/
+/*-----------------section-1---------------*/
+/*-----------------------------------------*/
+
+h2{
+    text-align: center;
+    font-weight: 300;
+    font-size: 180%
+}
+
+
+.long-text {
+    margin: 40px auto;
+}
+
+.section-info{
+    margin: 50px auto;
+}
+
+
+
+/*-----------------------------------------*/
+/*-----------------section-2---------------*/
+/*-----------------------------------------*/
+.schuler-features {
+    padding: 0;
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.features {
+    list-style: none;
+    width:100%;
+    background: black;
+}
+.features li{
+    display: block;
+    float: left;
+    width: 33.33%;
+}
+
+.features li h3{
+    position: absolute;
+    z-index: 100;
+    color: white;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 1%;
+    font-family: Lato;
+    font-weight: 400;
+}
+
+.feature-photo{
+    width: 100%;
+    margin:0;
+    overflow:hidden;
+}
+
+.feature-photo img{
+    z-index: -9;
+    opacity: 0.7;
+    width:100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s ,opacity 0.5s; 
+}
+
+.feature-photo img:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+.schuler-features:hover{
+    opacity: 1;
+    
+}
+
+/*--------featture2-----------
+.featuresv2{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    #background: black;
+    #margin-top: 100px;
+}
+
+.features2 {
+    opacity: 0.7;
+    #margin-top: 100px;
+}
+
+
+.features2 li{
+    top: 20;
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.features2 li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 28px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.features2 li a:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left:-100%;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: all ease 0.5s;
+    opacity: 0;
+}
+
+.features2 li a:hover:before{
+    width: 100%;
+    opacity: 1;
+    left:0;
+}
+
+#menu img{
+    position: absolute;
+    z-index: -1;
+    width: 80%;
+    height: 80vh;
+    #top: 0;
+    left: 10%;
+    object-fit: cover;
+    opacity:0.5;
+    transition: all ease 0.5s;
+}
+*/
+
+/*------------------------------------------------------------------------*/
+/*TESTIMONIALS*/
+/*------------------------------------------------------------------------*/
+
+.section-testimonials{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(assets/css/homepage/img/2.jpg);
+    background-size: cover;
+    color:#fff;
+    background-attachment: fixed;
+    margin: 100px 0;
+    
+}
+
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote:before{
+    content: "\201C";
+    font-size: 500%; 
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite{
+    font-size:90%;
+    margin-top: 25px;
+    display: block;
+    
+}
+
+
+cite img{
+    height: 50px;
+    border-radius:50%;
+    margin-right: 10px;
+    vertical-align: middle;
+        
+}
+
+
+/*------------------------------------------------------------------------*/
+/*FORM*/
+/*------------------------------------------------------------------------*/
+
+.contacct-form{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 200px;
+    
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    
+}
+
+textarea{
+    height: 100px;
+}
+
+input[type=checkbox]{
+    margin:10px 5px 10px 0;
+    
+}
+
+*:focus{
+    outline: none;
+}
+
+
+
+

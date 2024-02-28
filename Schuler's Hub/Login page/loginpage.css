@@ -1,0 +1,57 @@
+
+/*-----------------------------------------*/
+/*-----------------section-singup---------------*/
+/*-----------------------------------------*/
+
+h2{
+    text-align: center;
+    font-weight: 300;
+    font-size: 180%;
+}
+h3{
+    text-align: center;
+    font-weight: 300;
+    font-size: 130%;
+}
+
+.loginheading1 {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.loginheading2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navbg {
+    /*background: #2980b9;*/
+}
+
+.Loginform {
+    width: 60%;
+    margin: 70px auto;
+}
+
+input[type=email],
+input[type=password]{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    
+}
+.loginpage {
+    background-image:url(9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /*background: linear-gradient(#ff6f69,#ffcc5c);*/
+    height: 100vh;
+}
+
+
+
+#loginbutton,#forgotpassword  {
+    margin: 30px 0;
+}

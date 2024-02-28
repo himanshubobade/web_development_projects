@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="signup.css">
+        <link rel="stylesheet" type="text/css" href="grid.css">
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <link type="text/css" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+        <title>Register Page</title>
+
+    </head>
+    <body>
+        <section class="Signuppage">
+            
+            <div class="navbg">
+                <nav>
+                    <div class="row">
+                        <ul class="main-nav">
+                            <li><a href="#">Sing-up</a></li>
+                            <li><a href="#">Log-in</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            
+            <div class="row">
+                <div class="singupheading1">
+                    <h2>SIGN UP!!!!</h2>
+                </div>
+                <div class="singupheading2">
+                    <h3 class="singupheading2">MANY OF SCHULER"S HAVE ALREADY JOINED..!! IT'S YOUR TURN!!!</h3>
+                    <h3 class="singupheading2">YOUR TRUST IS OUR EVERYTHING</h3>
+                </div>
+                
+                <form method="post" action="#" class="Registerform">
+                    
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>First Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="Firstname" id="firstname" placeholder="Your First name" required>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Middle Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="Middlename" id="middlename" placeholder="Your Middle name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Last Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="Lastname" id="Lastname" placeholder="Your Last name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Date of Birth</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="date" id="DOB" name="DOB" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="Your-gender">Gender</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="gender" id="gender" required>
+                                <option value="Male" selected>Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Currently persuing</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="find-us" id="find us" required>
+                                <option value="Friends" selected>B.E./B.Tech</option>
+                                <option value="Search">B.Com</option>
+                                <option value="Ad">B.Sc</option>
+                                <option value="Some other way">BCA</option>
+                                <option value="Some other way">B.Arts</option>
+                                <option value="Some other way">B.Arch</option>
+                                <option value="Some other way">B.A.M.S</option>
+                                <option value="Some other way">B.B.A</option>
+                                <option value="Some other way">L.L.B.</option>
+                                <option value="Some other way">B.H.M.S</option>
+                                <option value="Some other way">M.B.B.S.</option>
+                                <option value="Some other way">B.Pharm</option>
+                                <option value="Some other way">M.D.</option>
+                                <option value="Some other way">M.B.A.</option>
+                                <option value="Some other way">M.Com.</option>
+                                <option value="Some other way">M.Sc.</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Year of Admission to graduation</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="number" placeholder="YYYY" min="2010" max="2021" required>
+                            <script>
+                              document.querySelector("input[type=number]")
+                              .oninput = e => console.log(new Date(e.target.valueAsNumber, 0, 1))
+                            </script>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Year of Graduation Passing</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="number" placeholder="YYYY" min="2010" max="2030" required>
+                            <script>
+                              document.querySelector("input[type=number]")
+                              .oninput = e => console.log(new Date(e.target.valueAsNumber, 0, 1))
+                            </script>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Name of college</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="Lastname" id="Lastname" placeholder="Name of college" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Name of university</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="Lastname" id="Lastname" placeholder="Name of university" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Registration number at university</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="Lastname" id="Lastname" placeholder="Registration number at university" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Courses accomplished</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="Lastname" id="Lastname" placeholder="Courses accomplished" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Are you interested in Courses?</label>
+                        </div>
+        
+                        <div class="col span-2-of-3">
+                            <input type="checkbox" name="checkbox" id="Course newsletter" checked>Yes, I am!
+                        </div>
+
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Bootcamps or Internships if any</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="Lastname" id="Lastname" placeholder="Bootcamps or Internships if any" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Currently persuing semesters</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="gender" id="gender" required>
+                                <option value="Male" selected>I</option>
+                                <option value="Female">II</option>
+                                <option value="Other">III</option>
+                                <option value="Male" selected>IV</option>
+                                <option value="Male" selected>V</option>
+                                <option value="Male" selected>VI</option>
+                                <option value="Male" selected>VII</option>
+                                <option value="Male" selected>VIII</option>         
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Average GPA(current semesters)</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="number" id="points" name="points" step="0.01" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>12th Board Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="Lastname" id="Lastname" placeholder="12th Board Name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>12th Board Aggregate</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="number" id="points" name="points" step="0.01" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>10th Board Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="Lastname" id="Lastname" placeholder="10th Board Name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>10th Board Aggregate</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="number" id="points" name="points" step="0.01" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Technical Interests</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="Lastname" id="Lastname" placeholder="Technical Interests" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Link for work samples</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="Lastname" id="Lastname" placeholder="Link for work samples" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Non-technical Interests/hobbies</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="Lastname" id="Lastname" placeholder="Non-technical Interests/hobbies" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Upload a pic</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="file" name="fileToUpload" id="fileToUpload" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Your current city</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="Lastname" id="Lastname" placeholder="Your current city" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="submitclassdown">
+                                <div class="col span-1-of-3">
+                                    <label></label>
+                                </div>
+                                <div class="col span-2-of-3">
+                                    <input type="submit" name="submit" id="submitdetail" placeholder="your info submit" required>
+                                </div>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+        </section>
+    </body>
+    
+</html>    

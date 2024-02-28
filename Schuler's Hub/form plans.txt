@@ -1,0 +1,34 @@
+------------------
+**********SIGN UP:************
+NAME: 
+Email:
+Re-enter Email:
+Password:
+Re-enter paasword:
+------------------
+
+*********PROFILE DETAILS:**********
+
+FIRST NAME:
+MIDDLE NAME:
+LAST NAME:
+Enter your Date of Birth:
+Gender:
+Currently persuing:
+Year of Degree from to:
+Name of the college:
+Name of University:
+Registration number at university:
+Courses accomplished:
+Bootcamps/Internships if any:
+Currently persuing semester:
+Average GPA as of now:
+Board of 12th:
+Marks secured in 12th: 
+Board of 10th:
+Marks secured in 10th: 
+Technical Interests:
+Link for Work Sample:
+Non-technical Interests(Hobbies):
+Upload a Profile pic:
+Your current City:

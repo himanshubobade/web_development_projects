@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #ffffff;
+    font-family: 'Lato','Arial',sans-serif;
+    color: #000000;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix {zoom:1}
+.clearfix:after{
+    content:'.';
+    clear:both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.row{
+    margin: 0 auto;
+    max-width: 1140px;
+} 
+
+/*--------------------------------------------------------------*/
+/*-----------------------Header-----------------------------*/
+/*--------------------------------------------------------------*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/headerbg5.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+h1{
+    font-size: 300%;
+    color: #ffffff;
+    font-weight: 300;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    margin: 0 auto 20px auto;
+    
+}
+
+
+.hero-text-box {
+    width: 1140px;
+    margin: 0 auto;
+    top: 80%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-70%,-50%);
+}
+
+
+.logo {
+    height: 100px;
+    width: auto;
+    margin-top: 10px;
+    
+}
+
+/*--------------------------------------------------------------*/
+/*-----------------------Navigation-----------------------------*/
+/*--------------------------------------------------------------*/
+
+.main-nav {
+    margin-top: 55px;
+    float: right;
+    list-style: none;
+}
+
+.main-nav li{
+    border-left: 40px;
+    margin-left: 30px;
+    display: inline-block;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 120%;
+    color: #fff;
+    padding: 8px 0px;
+    border-bottom: 2px #2980b9 transparent;
+    transition: border-bottom 0.2s;
+    
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #2980b9;
+    
+}
+
+/*--------------------------------------------------------------*/
+/*-----------------------section 1-----------------------------*/
+/*--------------------------------------------------------------*/
+
+h2{
+    text-align: center;
+    font-size: 175%;
+    font-weight: 300;
+
+}
+
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: #2980b9;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+.long-text {
+    margin: 40px auto;
+}
+
+.section-info {
+    margin: 40px auto;
+}
+
+
+/*--------------------------------------------------------------*/
+/*-----------------------section-images-----------------------------*/
+/*--------------------------------------------------------------*/
+
+
+.section-click-image {
+    padding: 0;
+}
+
+.images-part{
+    list-style: none;
+    width: 100%;
+    background-color: #000000;
+}
+.images-part li{
+    display: block;
+    width:100%;
+}
+
+.exercise-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    /*bg clor*/
+}
+
+.exercise-photo img{
+    opacity: 0.7;
+    width:100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s,opacity 0.5s;
+}
+
+.exercise-photo img:hover{
+    opacity :1;
+    transform: scale(1.0);
+}
+
+
+.meal-photo img{
+    opacity: 0.7;
+    width:100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s ,opacity 0.5s;
+    
+}
+
+
+.meal-photo img:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+
+/*------------subclassess for arranging texts----------*/
+
+
+.matter {
+    padding: 0;
+    background-image: url(img/background%20for%20section.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    width: auto;
+}
+
+.instance1 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+}
+h3{
+    font-size: 150%;
+}
+.cardio {
+    float: left;
+}
+
+.calisthenics {
+    float: right;
+}
+
+.instance2 {
+    padding-top: 180px;
+    padding-bottom: 150px;
+}
+
+.gymming {
+    float: left;
+    
+
+}
+
+.yoga {
+    float: right;
+
+}
+/*--------------------------------------------------------------*/
+/*-----------------------Diets-----------------------------*/
+/*--------------------------------------------------------------*/
+
+.diet-quote {
+    text-align: center;
+    font-size: 125%;
+    padding-top: 25px;
+    font-weight:300;
+}
+
+/*--------------------------------------------------------------*/
+/*-----------------------Author-----------------------------*/
+/*--------------------------------------------------------------*/
+
+
+.author{
+    margin: 250px auto 100px auto;
+    padding-top: 20px;
+}
+
+.author img{
+    height: 150px;
+    width: auto;
+    margin-top: 20px;
+    border-radius: 75px;
+    float:left;
+}
+
+.author_text {
+    font-family:cursive;
+    margin-left: 175px;
+    margin-top: 50px; 
+}
+
+.author-links {
+    width: 500px;
+    margin: 0 auto;
+}
+
+
+.author-links li{
+    width: 100%;
+    display: inline-block;
+}
+.author-links li{
+    float: left;
+    width:25%;
+}
+
+.author-links li:link,
+.author-links li:visited{
+    text-decoration: none;
+    color:#2980b9;
+    transition: color 0.2s;
+}
+
+.author-links li a:active,
+.author-links li a:hover{
+    font-size: 120%;
+}
+
+.ion-social-googleplus,
+.ion-information,
+.ion-social-instagram,
+.ion-social-linkedin{
+    transition: color 0.2s ;
+}
+
+.ion-social-googleplus:hover{
+    color:#db4437;
+}
+
+.ion-information:hover{
+    color:#1da1f2;
+}
+
+.ion-social-instagram:hover{
+    color:#f46f30;
+    
+}
+
+.ion-social-linkedin:hover{
+    color:#007bb5;
+}
+
+
+/*--------Footer-------*/
+
+footer {
+    background-color: #0d293c;
+}
+
+.footer-text {
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom:200px;
+}
+

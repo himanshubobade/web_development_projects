@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>vid slide</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <section>
+            <video id="slider" autoplay muted loop>
+                <source src="homepage.mp4" type="video/mp4">
+            </video>
+            <ul class="navigation">
+                <li onclick="videoUrl('video1.mp4')"><img src="thumb1.jpg"></li>
+                <li onclick="videoUrl('video2.mp4')"><img src="thumb2.jpg"></li>
+                <li onclick="videoUrl('video3.mp4')"><img src="thumb3.jpg"></li>
+                <li onclick="videoUrl('video4.mp4')"><img src="thumb4.jpg"></li>
+            </ul>
+        </section>
+        <script type="text/javascript">
+            function videoUrl(hmmmmmm){
+                document.getElementById("slider").src = hmmmmmm;
+            }
+        
+        </script>
+    </body>
+</html>
